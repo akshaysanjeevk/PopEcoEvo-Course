@@ -1,0 +1,14 @@
+# NetworkD3 SimpleNetwork generated from Ecopath with Ecosim - EwEEcopathExportDietToNetworkD3 plug-in
+# EwE model: Bamboung
+# EwE file: D:\IMSc coursework\PopEcoEvo\ECOPATH II Files\Bamboung.eweaccdb
+# !-- markdown is needed to export NeworkD3 models to a webpage
+# !-- if R does not let you install the correct version of markdown, run the following line:
+# install.packages("rmarkdown", repos = "https://cran.revolutionanalytics.com")
+
+
+library(networkD3)
+
+
+networkData <- data.frame(predators, preys)
+# Plot
+simpleNetwork(networkData)
